@@ -24,5 +24,15 @@ namespace Exercise14
         {
             InitializeComponent();
         }
+       
+        public String ConvertNumberToBinary(int number)
+        {
+            return Convert.ToString(number, 2);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            binaryLabel.Content = ConvertNumberToBinary(Convert.ToInt16(numberTextBox.Text));
+        }
     }
 }

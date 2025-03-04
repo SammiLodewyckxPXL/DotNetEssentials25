@@ -24,5 +24,19 @@ namespace Exercise15
         {
             InitializeComponent();
         }
+
+        private void convertButton_Click(object sender, RoutedEventArgs e)
+        {
+            ConvertSecondsToHoursMinutesSeconds();
+        }
+        private void ConvertSecondsToHoursMinutesSeconds()
+        {
+            int seconds = Convert.ToInt32(secondsTextBox.Text);
+            int minutes = seconds / 60;
+            seconds = seconds % 60;
+            int hours = minutes / 60;
+            minutes = minutes % 60;
+            timeLabel.Content = $"{secondsTextBox.Text} seconden is {hours} uur, {minutes} minuten en {seconds} seconden.";
+        }
     }
 }

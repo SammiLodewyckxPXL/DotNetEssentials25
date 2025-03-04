@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button Name="convertButton" Content="Convert" HorizontalAlignment="Left" Margin="143,97,0,0" VerticalAlignment="Top" Width="53" Click="convertButton_Click"/>
+        <TextBox Name="secondsTextBox" HorizontalAlignment="Left" Margin="333,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Name="timeLabel" Content="------" HorizontalAlignment="Left" Margin="355,251,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
